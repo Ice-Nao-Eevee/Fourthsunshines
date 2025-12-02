@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTamu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTamu.Designer.cs">
+      <DependentUpon>DataTamu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataKamar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataKamar.Designer.cs">
+      <DependentUpon>FormDataKamar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReservasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReservasi.Designer.cs">
+      <DependentUpon>FormReservasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kamar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kamar.Designer.cs">
+      <DependentUpon>kamar.cs</DependentUpon>
+    </Compile>
     <Compile Include="register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +90,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTamu.resx">
+      <DependentUpon>DataTamu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataKamar.resx">
+      <DependentUpon>FormDataKamar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReservasi.resx">
+      <DependentUpon>FormReservasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>

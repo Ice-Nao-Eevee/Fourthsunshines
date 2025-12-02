@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -62,31 +63,38 @@ namespace Fourthsunshines
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
+            // Username & Password benar
+            string usernameBenar = "sapi";
+            string passwordBenar = "raju";
 
-            if (username == "Username" || password == "Password")
+            // Cek login
+            if (txtUsername.Text == usernameBenar && txtPassword.Text == passwordBenar)
             {
-                MessageBox.Show("Please enter username and password.");
-                return;
-            }
+                // Pindah ke Dashboard
+                dashboard dash = new dashboard();
+                dash.Show();
 
-            // Contoh login sederhana
-            if (username == "admin" && password == "admin")
-            {
-                MessageBox.Show("Login berhasil!");
-                // buka form lain disini kalau ada
+                // Tutup atau sembunyikan form login
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Username atau password salah!");
+                MessageBox.Show(
+                    "Username atau password salah!",
+                    "Login Gagal",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
         }
+
 
         // ========== REGISTER LINK ==========
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("Menu register belum dibuat.");
+            register frm = new register();
+            frm.Show();
+            this.Hide(); // kalau mau login ditutup
         }
 
         private void lblAppName_Click(object sender, EventArgs e)
