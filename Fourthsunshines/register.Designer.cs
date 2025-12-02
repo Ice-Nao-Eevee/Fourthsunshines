@@ -143,7 +143,7 @@
             // btnclear
             // 
             this.btnclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(182)))), ((int)(((byte)(208)))));
-            this.btnclear.Location = new System.Drawing.Point(149, 569);
+            this.btnclear.Location = new System.Drawing.Point(149, 554);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(118, 43);
             this.btnclear.TabIndex = 9;
@@ -153,7 +153,7 @@
             // btnsimpan
             // 
             this.btnsimpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnsimpan.Location = new System.Drawing.Point(330, 569);
+            this.btnsimpan.Location = new System.Drawing.Point(334, 554);
             this.btnsimpan.Name = "btnsimpan";
             this.btnsimpan.Size = new System.Drawing.Size(118, 43);
             this.btnsimpan.TabIndex = 10;
